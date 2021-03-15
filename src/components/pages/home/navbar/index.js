@@ -53,7 +53,7 @@ window.addEventListener('resize', showButton);
 						</LinkS>
 					</li>
 					<li className="nav-item">
-						<LinkS to='/sponsorship' className='nav-links' onClick={closeMobileMenu}>
+						<LinkS to='sponsorship-section-id' className='nav-links' onClick={closeMobileMenu}>
 							Sponsorship
 						</LinkS>
 					</li>

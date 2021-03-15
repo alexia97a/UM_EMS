@@ -1,71 +1,73 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaSchool, FaUniversity} from 'react-icons/fa';
-import { MdSchool} from 'react-icons/md';
+import { GiRibbonMedal} from 'react-icons/gi';
 import {IconContext} from 'react-icons/lib';
 import './sponsorship_section.css'
 
 function SponsorshipSection(){
 
   return (
-  	<IconContext.Provider value={{color:'#fff', size: 64}}>
 
    	<div className="sponsorship__section" id="sponsorship-section-id">
    		<div className="sponsorship__wrapper">
-   			<h1 className="sponsorship__heading">COMPETITION</h1>
+   			<h1 className="sponsorship__heading">SPONSORSHIP</h1>
+             <h2 className="sponsorship__subheading">Contact : sponsor_dinowex-list@um.edu.my</h2>
    			<div className="sponsorship__container">
    				<Link to="/" className="sponsorship__container-card">
    					<div className="sponsorship__container-cardInfo">
-                     <h7>INVENTOR/ INNOVATOR</h7>
+                     <h7>BRONZE PACKAGE</h7>
    						<div className="icon">
-   							<FaUniversity />
+   							<IconContext.Provider value={{color:'#cd7f32 ', size: 64}}>
+                           <GiRibbonMedal />
+                        </IconContext.Provider>   
    						</div>
-   						<h3>Professional</h3>
-   						<h4>RM 390</h4>
-   						<p>Registration Fee</p>
-   					   <h5>
-                        Professionals from the relevant industry or staff of higher education institutions including private and public universities including polytechnic, community colleges, SME industries.
-                     </h5>
-                     <p><span>* Early Bird Registration Fee: RM350</span></p>
-   						<button className="sponsorship__register-button">Register</button>
+   						<h4>RM500 - RM999</h4>
+   					   
+                     <ul className='sponsorship__container-features'>
+                        <li>&#10004;Logo in promotional material</li>
+                        <li>&#10008;Materials on event platform</li>
+                        <li>&#10008;Personal booth and interaction with participants</li>
+                     </ul>11
+   						<button className="sponsorship__register-button">Sponsor</button>
    					</div>
    				</Link>
    				<Link to="/" className="sponsorship__container-card">
    					<div className="sponsorship__container-cardInfo">
-                     <h7>YOUNG INVENTOR/ INNOVATOR</h7>
+                     <h7>SILVER PACKAGE</h7>
    						<div className="icon">
-   							<MdSchool />
+   							<IconContext.Provider value={{color:'#C0C0C0', size: 64}}>
+                           <GiRibbonMedal />
+                        </IconContext.Provider>  
    						</div>
-   						<h3>Higher Institution</h3>
-   						<h4>RM 290</h4>
-   						<p>Registration Fee</p>
-   						<h5>
-                        Students from all HEI including public and private universities, polytechnic, industrial learning colleges, IKM MARA, and international student participation.
-                     </h5>
-                     <p><span>* Early Bird Registration Fee: RM250</span></p>
-   						<button className="sponsorship__register-button">Register</button>
+   						<h4>RM1000 - RM2999</h4>
+   						<ul className='sponsorship__container-features'>
+                        <li>&#10004;Logo in promotional material</li>
+                        <li>&#10004;Materials on event platform</li>
+                        <li>&#10008;Personal booth and interaction with participants</li>
+                     </ul>
+   						<button className="sponsorship__register-button">Sponsor</button>
    					</div>
    				</Link>
    				<Link to="/" className="sponsorship__container-card">
    					<div className="sponsorship__container-cardInfo">
-                     <h7>JUNIOR INVENTOR/ INNOVATOR</h7>
+                     <h7>GOLD PACKAGE</h7>
    						<div className="icon">
-   							<FaSchool />
+   							<IconContext.Provider value={{color:'#ffd700', size: 64}}>
+                           <GiRibbonMedal />
+                        </IconContext.Provider>  
    						</div>
-   						<h3>School Students</h3>
-   						<h4>RM 190</h4>
-   						<p>Registration Fee</p>
-   						 <h5>
-                        Schools students (Age 17 and below) from government and private school including MRSM, Vocational Colleges.
-                     </h5>
-                     <p><span>* Early Bird Registration Fee: RM150</span></p>
-   						<button className="sponsorship__register-button">Register</button>
+   						<h4>RM3000 and above</h4>
+   						<ul className='sponsorship__container-features'>
+                        <li>&#10004;Logo in promotional material</li>
+                        <li>&#10004;Materials on event platform</li>
+                        <li>&#10004;Personal booth and interaction with participants</li>
+                     </ul>
+   						<button className="sponsorship__register-button">Sponsor</button>
    					</div>
    				</Link>
    			</div>
    		</div>
    	</div>
-   	</IconContext.Provider>	
   )
 }
 
